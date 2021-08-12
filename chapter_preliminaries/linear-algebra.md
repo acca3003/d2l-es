@@ -1,15 +1,13 @@
 # Algebra Lineal
 :label:`sec_linear-algebra`
 
-By now, we can load datasets into tensors
-and manipulate these tensors 
-with basic mathematical operations.
-To start building sophisticated models,
-we will also need a few tools from linear algebra. 
-This section offers a gentle introduction 
-to the most essential concepts,
-starting from scalar arithmetic
-and ramping up to matrix multiplication.
+Hasta ahora, podemos cargar los datasets en los tensores y manipular estos tensores
+con operaciones matemáticas básicas.
+Para empezar a construir modelos sofisticados, también necesitaremos
+unas pocas herramientas de álgebra lineal.
+Esta sección ofrece una gentil introducción a la
+mayoría de los conceptos esenciales, empezando desde la aritmética escalar e incrementando hasta
+la multiplicación de matrices.
 
 
 

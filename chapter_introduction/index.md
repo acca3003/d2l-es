@@ -1,4 +1,4 @@
-# Introduction
+# Introduccción
 :label:`chap_introduction`
 
 Until recently, nearly every computer program 
@@ -104,7 +104,7 @@ a powerful set of techniques
 driving innovations in areas as diverse as computer vision,
 natural language processing, healthcare, and genomics.
 
-## A Motivating Example
+## Un Ejemplo Motivador
 
 Before beginning writing, the authors of this book,
 like much of the work force, had to become caffeinated.
@@ -238,7 +238,7 @@ which we will explain in greater detail later,
 is just one among many popular methods
 for solving machine learning problems.
 
-## Key Components
+## Componentes Clave
 
 In our wake word example, we described a dataset
 consisting of audio snippets and binary labels, 
@@ -261,7 +261,7 @@ that will follow us around, no matter what kind of machine learning problem we t
 1. An *objective function* that quantifies how well (or badly) the model is doing.
 1. An *algorithm* to adjust the model's parameters to optimize the objective function.
 
-### Data
+### Datos
 
 It might go without saying that you cannot do data science without data.
 We could lose hundreds of pages pondering what precisely constitutes data,
@@ -355,7 +355,7 @@ Note that this can all happen without the data scientist
 actively conspiring, or even being aware.
 
 
-### Models
+### Modelos
 
 Most machine learning involves transforming the data in some sense.
 We might want to build a system that ingests photos and predicts smiley-ness.
@@ -378,7 +378,7 @@ that are chained together top to bottom, thus the name *deep learning*.
 On our way to discussing deep models,
 we will also discuss some more traditional methods.
 
-### Objective Functions
+### Funciones Objetivo
 
 Earlier, we introduced machine learning as learning from experience.
 By *learning* here,
@@ -440,7 +440,7 @@ In real-life terms, this is like flunking the real exam
 despite doing well on practice exams.
 
 
-### Optimization Algorithms
+### Algoritmos de Optimización
 
 Once we have got some data source and representation,
 a model, and a well-defined objective function,
@@ -455,7 +455,7 @@ if you perturbed that parameter just a small amount.
 It then updates
 the parameter in the direction that may reduce the loss.
 
-## Kinds of Machine Learning Problems
+## Tipos de Problemas de Machine Learning
 
 The wake word problem in our motivating example
 is just one among
@@ -468,7 +468,7 @@ We will constantly refer to
 our aforementioned concepts 
 such as data, models, and training techniques.
 
-### Supervised Learning
+### Aprendizaje Supervisado
 
 Supervised learning addresses the task of
 predicting labels given input features.
@@ -536,7 +536,7 @@ The full process is drawn in :numref:`fig_supervised_learning`.
 ![Supervised learning.](../img/supervised-learning.svg)
 :label:`fig_supervised_learning`
 
-#### Regression
+#### Regresión
 
 Perhaps the simplest supervised learning task
 to wrap your head around is *regression*.
@@ -616,7 +616,7 @@ minimizing the squared error loss function.
 As we will see later, this loss corresponds to the assumption
 that our data were corrupted by Gaussian noise.
 
-#### Classification
+#### Clasificación
 
 While regression models are great for addressing *how many?* questions,
 lots of problems do not bend comfortably to this template.
@@ -731,7 +731,7 @@ For example, rattle snakes and garter snakes
 might be close on the phylogenetic tree,
 but mistaking a rattler for a garter could be deadly.
 
-#### Tagging
+#### Etiquetado
 
 Some classification problems fit neatly
 into the binary or multiclass classification setups.
@@ -786,7 +786,7 @@ until each article can have a proper manual review.
 Indeed, for several years, the BioASQ organization
 has [hosted competitions](http://bioasq.org/) to do precisely this.
 
-#### Search 
+#### Búsqueda 
 
 Sometimes we do not just want to assign each example to a bucket
 or to a real value. In the field of information retrieval,
@@ -820,7 +820,7 @@ Nowadays, search engines use machine learning and behavioral models
 to obtain query-dependent relevance scores.
 There are entire academic conferences devoted to this subject.
 
-#### Recommender Systems
+#### Sistemas de Recomendación
 :label:`subsec_recommender_systems`
 
 Recommender systems are another problem setting
@@ -882,7 +882,7 @@ and in turn is recommended even more frequently.
 Many of these problems about how to deal with censoring,
 incentives, and feedback loops, are important open research questions.
 
-#### Sequence Learning
+#### Secuencia de Aprendizaje
 
 So far, we have looked at problems where we have
 some fixed number of inputs and produce a fixed number of outputs.
@@ -989,7 +989,7 @@ real-world knowledge and the prior state of the conversation
 across long temporal distances.
 These are active areas of research.
 
-### Unsupervised and Self-Supervised Learning
+### Aprendizaje No-Supervisado y Auto-Supervisado
 
 All the examples so far were related to supervised learning,
 i.e., situations where we feed the model a giant dataset
@@ -1077,7 +1077,7 @@ are both classification tasks
 
 
 
-### Interacting with an Environment
+### Interactuando con el Entorno
 
 So far, we have not discussed where data actually
 comes from,
@@ -1133,7 +1133,7 @@ while the homework was composed by his teaching assistants.
 Next, we will briefly describe reinforcement learning,
 a setting that explicitly considers interactions with an environment.
 
-### Reinforcement Learning
+### Aprendizaje por Refuerzo
 
 If you are interested in using machine learning
 to develop an agent that interacts with an environment
@@ -1233,7 +1233,7 @@ When there is no state, just a set of available actions
 with initially unknown rewards, this problem
 is the classic *multi-armed bandit problem*.
 
-## Roots
+## Raíces
 
 We have just reviewed
 a small subset of problems that machine learning 
@@ -1345,7 +1345,7 @@ Unlike neural networks, they did not require weeks to train
 and provided predictable results with strong theoretical guarantees.
 
 
-## The Road to Deep Learning
+## El Camino al Deep Learning
 
 Much of this changed with 
 the ready availability of large amounts of data,
@@ -1601,7 +1601,7 @@ With what we know today, this strikes us a much more pressing concern
 than the potential of malevolent superintelligence to destroy humanity.
 
 
-## Characteristics
+## Características
 
 Thus far, we have talked about machine learning broadly, which is both a branch of AI and an approach to AI.
 Though deep learning is a subset of machine learning,
@@ -1678,7 +1678,7 @@ It is in this spirit that the notebooks forming this book are freely available f
 * Much of the recent progress in deep learning has been triggered by an abundance of data arising from cheap sensors and Internet-scale applications, and by significant progress in computation, mostly through GPUs.
 * Whole system optimization is a key component in obtaining high performance. The availability of efficient deep learning frameworks has made design and implementation of this significantly easier.
 
-## Exercises
+## Ejercicios
 
 1. Which parts of code that you are currently writing could be "learned", i.e., improved by learning and automatically determining design choices that are made in your code? Does your code include heuristic design choices?
 1. Which problems that you encounter have many examples for how to solve them, yet no specific way to automate them? These may be prime candidates for using deep learning.

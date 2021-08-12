@@ -1,4 +1,4 @@
-# Linear Algebra
+# Algebra Lineal
 :label:`sec_linear-algebra`
 
 By now, we can load datasets into tensors
@@ -13,7 +13,7 @@ and ramping up to matrix multiplication.
 
 
 
-## Scalars
+## Escalares
 
 
 Most everyday mathematics
@@ -81,7 +81,7 @@ y = tf.constant(2.0)
 x + y, x * y, x / y, x**y
 ```
 
-## Vectors
+## Vectores
 
 For our purposes, [**you can think of vectors
 as fixed-length arrays of scalars.**]
@@ -309,7 +309,7 @@ and columns correspond to distinct attributes.
 
 
 
-## Tensors
+## Tensores
 
 While you can go far in your machine learning journey
 with only scalars, vectors, and matrices,
@@ -359,7 +359,7 @@ torch.arange(24).reshape(2, 3, 4)
 tf.reshape(tf.range(24), (2, 3, 4))
 ```
 
-## Basic Properties of Tensor Arithmetic
+## Propiedades Básicas de la Aritmética de Tensores
 
 Scalars, vectors, matrices, 
 and higher-order tensors
@@ -444,7 +444,7 @@ X = tf.reshape(tf.range(24), (2, 3, 4))
 a + X, (a * X).shape
 ```
 
-## Reduction
+## Reducción
 :label:`subseq_lin-alg-reduction`
 
 Often, we wish to calculate [**the sum of a tensor's elements.**]
@@ -584,7 +584,7 @@ A.mean(axis=0), A.sum(axis=0) / A.shape[0]
 tf.reduce_mean(A, axis=0), tf.reduce_sum(A, axis=0) / A.shape[0]
 ```
 
-## Non-Reduction Sum
+## Suma Sin-Reducción
 :label:`subseq_lin-alg-non-reduction`
 
 Sometimes it can be useful to [**keep the number of axes unchanged**]
@@ -644,7 +644,7 @@ A.cumsum(axis=0)
 tf.cumsum(A, axis=0)
 ```
 
-## Dot Products
+## PRoductos Dot
 
 So far, we have only performed elementwise operations, sums, and averages. 
 And if this was all we could do, linear algebra 
@@ -707,7 +707,7 @@ the dot products express the cosine of the angle between them.
 Later in this section, we will formally introduce this notion of *length*.
 
 
-## Matrix-Vector Products
+## Productos Matriz-Vector
 
 Now that we know how to calculate dot products,
 we can begin to understand the *product*
@@ -806,7 +806,7 @@ A.shape, x.shape, torch.mv(A, x), A@x
 A.shape, x.shape, tf.linalg.matvec(A, x)
 ```
 
-## Matrix-Matrix Multiplication
+## Multiplicación Matriz-Matriz
 
 If you've gotten the hang of dot products and matrix-vector products,
 then *matrix-matrix multiplication* should be straightforward.
@@ -906,7 +906,7 @@ often simplified to *matrix multiplication*,
 and should not be confused with the Hadamard product.
 
 
-## Norms
+## Normas
 :label:`subsec_lin-algebra-norms`
 
 Some of the most useful operators in linear algebra are *norms*.
@@ -1036,7 +1036,7 @@ the objectives of deep learning algorithms,
 are often expressed as norms. 
 
 
-## Discussion
+## Comentarios
 
 In this section, we reviewed all the linear algebra
 that you will need to understand
@@ -1086,7 +1086,7 @@ To recap:
    and common matrix norms include the *spectral* and *Frobenius* norms.
 
 
-## Exercises
+## Ejercicios
 
 1. Prove that the transpose of the transpose of a matrix is the matrix itself: $(\mathbf{A}^\top)^\top = \mathbf{A}$.
 1. Given two matrices $\mathbf{A}$ and $\mathbf{B}$, show that sum and transposition commute: $\mathbf{A}^\top + \mathbf{B}^\top = (\mathbf{A} + \mathbf{B})^\top$.

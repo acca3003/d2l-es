@@ -44,7 +44,7 @@ Nuestra meta es ofrecer un recurso que pueda
 
 1. [**Detecting Human Driver Inattentive and Aggressive Driving Behavior Using Deep Learning: Recent Advances, Requirements and Open Challenges**](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9107077). M. Alkinani, W. Khan, Q. Arshad. *IEEE Access, 2020*
 
-<details><summary>more</summary>
+<details><summary>más</summary>
 
 1. [**Diagnosing Parkinson by Using Deep Autoencoder Neural Network**](https://link.springer.com/chapter/10.1007/978-981-15-6325-6_5). U. Kose, O. Deperlioglu, J. Alzubi, B. Patrut. *Deep Learning for Medical Decision Support Systems, 2020*
 
@@ -59,8 +59,7 @@ Nuestra meta es ofrecer un recurso que pueda
 </details>
 
 
-If you find this book useful, please star (★) this repository or cite this book using the following bibtex entry:
-Si tu encuentras útil este libro, por favor marca la estrella () de este repositorio o cita este libro usando la siguiente entrada de bibtex
+Si tu encuentras útil este libro, por favor marca la estrella () de este repositorio o cita este libro usando la siguiente entrada de bibtex:
 ```
 @article{zhang2021dive,
     title={Dive into Deep Learning},
@@ -84,11 +83,11 @@ Si tu encuentras útil este libro, por favor marca la estrella () de este reposi
 > <b>&mdash; Bernhard Schölkopf, Director, Max Planck Institute for Intelligent Systems</b>
 
 
-## Contribuir ([Learn How](https://d2l.ai/chapter_appendix-tools-for-deep-learning/contributing.html))
+## Contribuir ([Aprende Cómo](https://d2l.ai/chapter_appendix-tools-for-deep-learning/contributing.html))
 
-This open source book has benefited from pedagogical suggestions, typo corrections, and other improvements from community contributors. Your help is valuable for making the book better for everyone.
+Este libro de código abierto se ha beneficiado de los contribuidores de la comunidad desde sugerencias pedagócias, correcciones tipográficas, y otras mejoras.
 
-**Dear [D2L contributors](https://github.com/d2l-ai/d2l-en/graphs/contributors), please email your GitHub ID and name to d2lbook.en AT gmail DOT com so your name will appear on the [acknowledgments](https://d2l.ai/chapter_preface/index.html#Acknowledgments). Thanks.**
+**Estimados [D2L contribuidores](https://github.com/d2l-ai/d2l-en/graphs/contributors), por favor envía tu GitHub ID y nombre a d2lbook.en AT gmail DOT com así tu nombre aparecerá en los [agradecimientos](https://d2l.ai/chapter_preface/index.html#Acknowledgments). Gracias.**
 
 
 ## Sumario de Licencias

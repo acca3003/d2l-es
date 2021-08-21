@@ -1,67 +1,56 @@
-# Installation
+# Instalación
 :label:`chap_installation`
 
-In order to get up and running,
-we will need an environment for running Python,
-Jupyter notebooks, the relevant libraries, 
-and the code needed to run the book itself.
+Para poder ejecutar el código, necesitaremos un entorno para ejecutar Python, notebooks de Jupiter, las librerías relevantes, y el código necesitado para ejecutar el libro en si mismo.
 
-## Installing Miniconda
+## Instalando Miniconda
 
-Your simplest option is to install
+Tu opción más sencilla es instalar
 [Miniconda](https://conda.io/en/latest/miniconda.html). 
-Note that the Python 3.x version is required. 
-You can skip the following steps 
-if your machine already has conda installed.
+Notar que la versión 3.x de Python es requisito necesario. 
+Puedes saltarte los siguientes pasos si tu máquina ya tiene conda instalado.
 
-Visit the Miniconda website and determine 
-the appropriate version for your system
-based on your Python 3.x version and machine architecture.
-For example, if you are using macOS and Python 3.x,
-you would download the bash script 
-whose name contains the strings "Miniconda3" and "MacOSX",
-navigate to the download location,
-and execute the installation as follows:
+Visita la web de Miniconda y determina cual es la versión apropiada para tu sistema
+basado en tu versión de Python 3.x y la arquitectura de tu máquina.
+Por ejemplo, si tu estás usando macOS y Python 3.x,
+tu descargarías el script bash cuyo nombre contiene el texto "Miniconda3" y "MacOSX",
+navega a la localización de descarga,
+y ejecuta la instalación como sigue:
 
 ```bash
 sh Miniconda3-latest-MacOSX-x86_64.sh -b
 ```
 
 
-A Linux user with Python 3.x 
-would download the file
-whose name contains the strings "Miniconda3" and "Linux" 
-and execute the following at the download location:
+Un usuario de Linux con Python 3.x 
+descargaría el fichero cuyo nombre contiene el texto "Miniconda3" y "Linux" 
+y lo ejecutaría lo siguiente en la localización de descargar:
 
 ```bash
 sh Miniconda3-latest-Linux-x86_64.sh -b
 ```
 
 
-Next, initialize the shell so we can run `conda` directly.
+Después, inicializas la shell así puedes ejecutar `conda` directamente.
 
 ```bash
 ~/miniconda3/bin/conda init
 ```
 
 
-Now close and reopen your current shell. 
-You should be able to create 
-a new environment as follows:
+Ahora cierra y reabre tu actual shell. 
+Tu deberías ser capaz de crear un nuevo entorno como sigue:
 
 ```bash
 conda create --name d2l python=3.8 -y
 ```
 
 
-## Downloading the D2L Notebooks
+## Descargando los Notebooks de D2L 
 
-Next, we need to download the code of this book. 
-You can click the "All Notebooks" tab 
-on the top of any HTML page 
-to download and unzip the code.
-Alternatively, if you have `unzip` 
-(otherwise run `sudo apt install unzip`) available:
+Lo siguiente, necesitamos descargar el código de este libro.
+Tu puedes pulsar la pestaña "All Notebooks" en la parte de arriba de de cualquier página HTML del libro para descargar y descomprimir el código.
+Alternativamente, si tu tienes `unzip` (sino ejecuta `sudo apt install unzip`) disponible:
 
 ```bash
 mkdir d2l-en && cd d2l-en
@@ -70,34 +59,29 @@ unzip d2l-en.zip && rm d2l-en.zip
 ```
 
 
-Now we can activate the `d2l` environment:
+Ahora activamos el entorno `d2l`:
 
 ```bash
 conda activate d2l
 ```
 
 
-## Installing the Framework and the `d2l` Package
+## Instalando el Framework y el Paquete `d2l`
 
-Before installing any deep learning framework, 
-please first check whether or not 
-you have proper GPUs on your machine
-(the GPUs that power the display 
-on a standard laptop are not relevant for our purposes).
-If you are working on a GPU server,
-proceed to :ref:`subsec_gpu` 
-for instructions on how 
-to install GPU-friendly versions
-of the relevant libraries.
+Antes de instalar cualquier framework de deep learning,
+por favor comprueba si tienes o no una GPU adecuada en tu máquina
+(las GPUs que aceleran la pantalla de un portatil standard no son relevantes para nuestros propósitos).
+Si estás trabajando en un servidor con GPR, continua con :ref:`subsec_gpu` 
+para instrucciones de cómo instalar versiones GPU-compatibles de las librerías relevantes.
 
-If your machine does not house any GPUs,
-there is no need to worry just yet.
-Your CPU provides more than enough horsepower 
-to get you through the first few chapters.
-Just remember that you will want to access GPUs 
-before running larger models.
-To install the the CPU version,
-execute the following command.
+Si tu máquina no usa ninguna GPU,
+no hay necesidad de preocuparse todavía.
+Tu CPU proporciona más que suficiente potencia 
+para conseguir que pases por los primeros capítulos.
+Sólo recuerda que querrás tener acceso a GPUs
+antes de ejecutar modelos más grandes.
+Para instalar la versión de CPU,
+ejecuta el siguiente comando.
 
 
 :begin_tab:`mxnet`
@@ -120,7 +104,7 @@ pip install torch torchvision
 :end_tab:
 
 :begin_tab:`tensorflow`
-You can install TensorFlow with both CPU and GPU support as follows:
+Tu puedes instalar TensorFlow con soporte para ambos CPU y GPU como sigue:
 
 ```bash
 pip install tensorflow tensorflow-probability
@@ -130,11 +114,9 @@ pip install tensorflow tensorflow-probability
 :end_tab:
 
 
-Our next step is to install 
-the `d2l` package that we developed 
-in order to encapsulate
-frequently used functions and classes
-found throughout this book.
+Nuestro siguiente paso es instalar 
+el paqeute `d2l` que hemos desarrollado para encapsular
+funciones y clases usadas frecuentemente que encontrarás a lo largo de este libro.
 
 ```bash
 # -U: Upgrade all packages to the newest available version
@@ -142,70 +124,68 @@ pip install -U d2l
 ```
 
 
-Once you have completed these installation steps, we can the Jupyter notebook server by running:
+Una vez que tu has completado los pasos de instalación, arrancamos el servidor de notebooks de Jupiter ejecutando:
 
 ```bash
 jupyter notebook
 ```
 
 
-At this point, you can open http://localhost:8888 
-(it may have already opened automatically) in your Web browser. 
-Then we can run the code for each section of the book.
-Please always execute `conda activate d2l` 
-to activate the runtime environment
-before running the code of the book 
-or updating the deep learning framework or the `d2l` package.
-To exit the environment, 
-run `conda deactivate`.
+En este punto, tu puedes abrir http://localhost:8888 
+(puede que se haya abierto ya automáticamente) en tu navegador.
+Entonces nosotros podemos ejecutar el código para cada sección de el libro.
+Por favor siempre ejecuta `conda activate d2l` 
+para activar el entorno de ejecución
+antes de ejecutar el código de el libro
+o actualizar el framework de deep learning o el paquete de `d2l`.
+Para salir del entorno, ejecuta:run `conda deactivate`.
 
 
-## GPU Support
+## Soporte para GPU
 :label:`subsec_gpu`
 
 :begin_tab:`mxnet`
-By default, MXNet is installed without GPU support
-to ensure that it will run on any computer (including most laptops).
-Part of this book requires or recommends running with GPU.
-If your computer has NVIDIA graphics cards and has installed [CUDA](https://developer.nvidia.com/cuda-downloads),
-then you should install a GPU-enabled version.
-If you have installed the CPU-only version,
-you may need to remove it first by running:
+Por defecto, MXNet se isntala sin soporte para GPU
+para asegurar que se ejecutará en cualquier ordenador (incluyendo la mayoría de los portátiles).
+Parte de este libro requiere o recomienda la ejecución con GPU.
+Si tu ordenador tiene tarjeta gráfica NVIDIA y tiene isntalado [CUDA](https://developer.nvidia.com/cuda-downloads),
+entonces tu deberías instalar la versión con GPU habilitada.
+Si tu tienes isntalada la versión de sólo CPU, puede que necesites desinstalarla primero ejecutando
 
 ```bash
 pip uninstall mxnet
 ```
 
+Ahora necesitamos encontar que versión de CUDA tienes instalada.
+Puedes comprobarlo ejecutando `nvcc --version` 
+o `cat /usr/local/cuda/version.txt`.
+Asumiento que tienes instalado CUDA 10.1,
+entonces puedes instalar con los siguientes comandos:
 
-We now need to find out what version of CUDA you have installed.
-You can check this by running `nvcc --version` 
-or `cat /usr/local/cuda/version.txt`.
-Assume that you have installed CUDA 10.1,
-then you can install with the following command:
 
 ```bash
-# For Windows users
+# Para usuarios Windows
 pip install mxnet-cu101==1.7.0 -f https://dist.mxnet.io/python
 
-# For Linux and macOS users
+# Para usuarios Linux y macOS
 pip install mxnet-cu101==1.7.0
 ```
 
 
-You may change the last digits according to your CUDA version, e.g., `cu100` for
-CUDA 10.0 and `cu90` for CUDA 9.0.
+Puedes cambiar los últimos digitos de acuerdo a tu versión de CUDA, por ejemplo, `cu100` para
+CUDA 10.0 y `cu90` para CUDA 9.0.
 :end_tab:
 
 
 :begin_tab:`pytorch,tensorflow`
-By default, the deep learning framework is installed with GPU support.
-If your computer has NVIDIA GPUs and has installed [CUDA](https://developer.nvidia.com/cuda-downloads),
-then you are all set.
+Por defecto, este framework de deep learning se instala con soporte para GPU.
+Si tienes GPUs NVIDIA y has instalado [CUDA](https://developer.nvidia.com/cuda-downloads),
+entonces lo tienes configurado.
 :end_tab:
 
-## Exercises
+## Ejercicios
 
-1. Download the code for the book and install the runtime environment.
+1. Descarga el código para el libro e instala el entorno de ejecución.
 
 :begin_tab:`mxnet`
 [Discussions](https://discuss.d2l.ai/t/23)

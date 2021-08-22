@@ -79,15 +79,15 @@ que las letras minúsculas generalmente representan valores escalares.
 * $P(X=x)$: la probabilidad de que la variable aleatoria $X$ tome el valor $x$
 * $P(X \mid Y)$: distribución de la probabilidad condicional $X$ dado $Y$
 * $p(\cdot)$: una función de densidad (PDF) associated with distribution P
-* ${E}[X]$: expectation of a random variable $X$
-* $X \perp Y$: random variables $X$ and $Y$ are independent
-* $X \perp Y \mid Z$: random variables  $X$  and  $Y$ are conditionally independent given $Z$
-* $\sigma_X$: standard deviation of random variable $X$
-* $\mathrm{Var}(X)$: variance of random variable $X$, equal to $\sigma^2_X$
-* $\mathrm{Cov}(X, Y)$: covariance of random variables $X$ and $Y$
-* $\rho(X, Y)$: the Pearson correlation coefficient between $X$ and $Y$, equals $\frac{\mathrm{Cov}(X, Y)}{\sigma_X \sigma_Y}$
-* $H(X)$: entropy of random variable $X$
-* $D_{\mathrm{KL}}(P\|Q)$: the KL-divergence (or relative entropy) from distribution $Q$ to distribution $P$
+* ${E}[X]$: esperanza de una variable aleatoria $X$
+* $X \perp Y$: las variables aleatorias $X$ e $Y$ son independientes
+* $X \perp Y \mid Z$: las variables aleatorias $X$  e  $Y$ son codicionalmente independientes dada $Z$
+* $\sigma_X$: desviación estándar de la variable aleatoria $X$
+* $\mathrm{Var}(X)$: varianza de la variable aleatoria $X$, igual a $\sigma^2_X$
+* $\mathrm{Cov}(X, Y)$: covarianza de las variables aleatorias $X$ e $Y$
+* $\rho(X, Y)$: el coeficiente de correlación de Pearson entre $X$ e $Y$, igual a $\frac{\mathrm{Cov}(X, Y)}{\sigma_X \sigma_Y}$
+* $H(X)$: entropyia de la variable aleatoria $X$
+* $D_{\mathrm{KL}}(P\|Q)$: la KL-divergencia (o entropia relativa) de una distribución $Q$ con una distribución $P$
 
 
 

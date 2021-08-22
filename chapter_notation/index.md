@@ -17,7 +17,7 @@ que las letras minúsculas generalmente representan valores escalares.
 * $\mathbf{x}$: un vector
 * $\mathbf{X}$: una matriz
 * $\mathsf{X}$: un tensro genérico
-* * $\mathbf{I}$: una matriz identidad---cuadrada, con $1$ en todos los elementos de la diagonal y $0$ en todos los elementos fuera de la diagonal
+* $\mathbf{I}$: una matriz identidad---cuadrada, con $1$ en todos los elementos de la diagonal y $0$ en todos los elementos fuera de la diagonal
 * $x_i$, $[\mathbf{x}]_i$: el $i^\mathrm{th}$ elemento del vector $\mathbf{x}$
 * $x_{ij}$, $x_{i,j}$,$[\mathbf{X}]_{ij}$, $[\mathbf{X}]_{i,j}$: el elemento de la matriz $\mathbf{X}$ en la fila $i$ y columna $j$.
 
@@ -42,43 +42,43 @@ que las letras minúsculas generalmente representan valores escalares.
 ## Funciones y Operadores
 
 
-* $f(\cdot)$: a function
-* $\log(\cdot)$: the natural logarithm (base $e$)
-* $\log_2(\cdot)$: logarithm with base $2$
-* $\exp(\cdot)$: the exponential function
-* $\mathbf{1}(\cdot)$: the indicator function, evaluates to $1$ if the boolean argument is true and $0$ otherwise
-* $\mathbf{1}_{\mathcal{X}}(z)$: the set-membership indicator function, evaluates to $1$ if the element $z$ belongs to the set $\mathcal{X}$ and $0$ otherwise
-* $\mathbf{(\cdot)}^\top$: transpose of a vector or a matrix
-* $\mathbf{X}^{-1}$: inverse of matrix $\mathbf{X}$
-* $\odot$: Hadamard (elementwise) product
-* $[\cdot, \cdot]$: concatenation
-* $\|\cdot\|_p$: $\ell_p$ norm
-* $\|\cdot\|$: $\ell_2$ norm
-* $\langle \mathbf{x}, \mathbf{y} \rangle$: dot product of vectors $\mathbf{x}$ and $\mathbf{y}$
-* $\sum$: summation over a collection of elements
-* $\prod$: product over a collection of elements
-* $\stackrel{\mathrm{def}}{=}$: an equality asserted as a definition of the symbol on the left-hand side
+* $f(\cdot)$: una función
+* $\log(\cdot)$: el logaritmo neperiano/natural (base $e$)
+* $\log_2(\cdot)$: logaritmo con base $2$
+* $\exp(\cdot)$: la función exponencial
+* $\mathbf{1}(\cdot)$: la función indicador, evalua a $1$ si el argument booleano es verdadero y a $0$ en cualquier otro caso
+* $\mathbf{1}_{\mathcal{X}}(z)$: la función indicador de miembro de un conjunto, evalua a $1$ si el elemento $z$ pertenece al conjunto $\mathcal{X}$ y $0$ en cualquier otro caso
+* $\mathbf{(\cdot)}^\top$: transposición de un vector o matriz
+* $\mathbf{X}^{-1}$: inversa de una matriz $\mathbf{X}$
+* $\odot$: producto Hadamard (por elementos)
+* $[\cdot, \cdot]$: concatenación
+* $\|\cdot\|_p$: $\ell_p$ norma
+* $\|\cdot\|$: $\ell_2$ norma
+* $\langle \mathbf{x}, \mathbf{y} \rangle$: producto escalar/punto de los vectores $\mathbf{x}$ y $\mathbf{y}$
+* $\sum$: suma de una colección de elementos
+* $\prod$: producto de una colección de elementos
+* $\stackrel{\mathrm{def}}{=}$: una igualdad afirmada como una definición a la izquierda del símbolo
 
 
 
-## Calculus
+## Cálculo
 
-* $\frac{dy}{dx}$: derivative of $y$ with respect to $x$
-* $\frac{\partial y}{\partial x}$: partial derivative of $y$ with respect to $x$
-* $\nabla_{\mathbf{x}} y$: gradient of $y$ with respect to $\mathbf{x}$
-* $\int_a^b f(x) \;dx$: definite integral of $f$ from $a$ to $b$ with respect to $x$
-* $\int f(x) \;dx$: indefinite integral of $f$ with respect to $x$
+* $\frac{dy}{dx}$: derivada de $y$ respecto a $x$
+* $\frac{\partial y}{\partial x}$: derivada parcial de $y$ respecto a $x$
+* $\nabla_{\mathbf{x}} y$: gradiente de $y$ respecto a $\mathbf{x}$
+* $\int_a^b f(x) \;dx$: integral definida de $f$ entre $a$ y $b$ con respecto a $x$
+* $\int f(x) \;dx$: integral indefinida def $f$ respecto a $x$
 
 
 
-## Probability and Information Theory
+## Probabilidad y Teoría de la Información
 
-* $X$: a random variable
-* $P$: a probability distribution
-* $X \sim P$: the random variable $X$ has distribution $P$
-* $P(X=x)$: the probability assigned to the event where random variable $X$ takes value $x$
-* $P(X \mid Y)$: the conditional probability distribution of $X$ given $Y$
-* $p(\cdot)$: a probability density function (PDF) associated with distribution P
+* $X$: una variable aleatoria
+* $P$: una distribución de probabilidad
+* $X \sim P$: la variable aleatoria $X$ con distribución $P$
+* $P(X=x)$: la probabilidad de que la variable aleatoria $X$ tome el valor $x$
+* $P(X \mid Y)$: distribución de la probabilidad condicional $X$ dado $Y$
+* $p(\cdot)$: una función de densidad (PDF) associated with distribution P
 * ${E}[X]$: expectation of a random variable $X$
 * $X \perp Y$: random variables $X$ and $Y$ are independent
 * $X \perp Y \mid Z$: random variables  $X$  and  $Y$ are conditionally independent given $Z$

@@ -1,49 +1,45 @@
-# Notation
+# Notación
 :label:`chap_notation`
 
-Throughout this book, we adhere to the following notational conventions.
-Note that some of these symbols are placeholders,
-while others refer to specific objects.
-As a general rule of thumb, 
-the indefinite article "a" indicates
-that the symbol is a placeholder
-and that similarly formatted symbols
-can denote other objects of the same type.
-For example, "$x$: a scalar" means 
-that lowercased letters generally
-represent scalar values.
+A lo largo de este libro, seguiremos las siguientes convenciones de notación.
+Tener en cuenta que alguno de estos símbolos son marcadores, mientras otros 
+se refieren a objetos específicos.
+Como regla general, el artículo indefinido "un/una" indica
+que el símbolo es un marcador y que símbolos similarmente formateados
+pueden denotar otros objetos del mismo tipo.
+Por ejemplo, "$x$: un escalar" significa
+que las letras minúsculas generalmente representan valores escalares.
+
+
+## Objetos Numéricos
+
+* $x$: un escalar
+* $\mathbf{x}$: un vector
+* $\mathbf{X}$: una matriz
+* $\mathsf{X}$: un tensro genérico
+* * $\mathbf{I}$: una matriz identidad---cuadrada, con $1$ en todos los elementos de la diagonal y $0$ en todos los elementos fuera de la diagonal
+* $x_i$, $[\mathbf{x}]_i$: el $i^\mathrm{th}$ elemento del vector $\mathbf{x}$
+* $x_{ij}$, $x_{i,j}$,$[\mathbf{X}]_{ij}$, $[\mathbf{X}]_{i,j}$: el elemento de la matriz $\mathbf{X}$ en la fila $i$ y columna $j$.
 
 
 
-## Numerical Objects
-
-* $x$: a scalar
-* $\mathbf{x}$: a vector
-* $\mathbf{X}$: a matrix
-* $\mathsf{X}$: a general tensor
-* $\mathbf{I}$: an identity matrix---square, with $1$ on all diagonal entries and $0$ on all off-diagonals
-* $x_i$, $[\mathbf{x}]_i$: the $i^\mathrm{th}$ element of vector $\mathbf{x}$
-* $x_{ij}$, $x_{i,j}$,$[\mathbf{X}]_{ij}$, $[\mathbf{X}]_{i,j}$: the element of matrix $\mathbf{X}$ at row $i$ and column $j$.
+## Teoría de Conjuntos
 
 
-
-## Set Theory
-
-
-* $\mathcal{X}$: a set
-* $\mathbb{Z}$: the set of integers
-* $\mathbb{Z}^+$: the set of positive integers
-* $\mathbb{R}$: the set of real numbers
-* $\mathbb{R}^n$: the set of $n$-dimensional vectors of real numbers
-* $\mathbb{R}^{a\times b}$: The set of matrices of real numbers with $a$ rows and $b$ columns
-* $|\mathcal{X}|$: cardinality (number of elements) of set $\mathcal{X}$
-* $\mathcal{A}\cup\mathcal{B}$: union of sets $\mathcal{A}$ and $\mathcal{B}$
-* $\mathcal{A}\cap\mathcal{B}$: intersection of sets $\mathcal{A}$ and $\mathcal{B}$
-* $\mathcal{A}\setminus\mathcal{B}$: set subtraction of $\mathcal{B}$ from $\mathcal{A}$ (contains only those elements of $\mathcal{A}$ that do not belong to $\mathcal{B}$)
+* $\mathcal{X}$: un conjunto
+* $\mathbb{Z}$: el conjuntos de los números enteros
+* $\mathbb{Z}^+$: el conjunto de los números enteros positivos
+* $\mathbb{R}$: el conjunto de los números reales
+* $\mathbb{R}^n$: el conjunto vecotres $n$-dimensionales de números reales
+* $\mathbb{R}^{a\times b}$: El cojunto de matrices de números reales con $a$ filas y $b$ columnas
+* $|\mathcal{X}|$: cardinalidad (número de elementos) de un conjunto $\mathcal{X}$
+* $\mathcal{A}\cup\mathcal{B}$: union de los conjuntos $\mathcal{A}$ y $\mathcal{B}$
+* $\mathcal{A}\cap\mathcal{B}$: intersección de los cojuntos $\mathcal{A}$ y $\mathcal{B}$
+* $\mathcal{A}\setminus\mathcal{B}$: conjunto substracción de $\mathcal{B}$ a $\mathcal{A}$ (contiene sólo aquellos elementos de $\mathcal{A}$ que no pertenecen a $\mathcal{B}$)
 
 
 
-## Functions and Operators
+## Funciones y Operadores
 
 
 * $f(\cdot)$: a function

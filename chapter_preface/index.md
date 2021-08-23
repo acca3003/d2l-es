@@ -1,30 +1,34 @@
-# Preface
+# Prefacio
 
-Just a few years ago, there were no legions of deep learning scientists
-developing intelligent products and services at major companies and startups.
-When we entered the field, machine learning 
-did not command headlines in daily newspapers.
-Our parents had no idea what machine learning was,
-let alone why we might prefer it to a career in medicine or law.
-Machine learning was a blue skies academic discipline
-whose industrial significance was limited
-to a narrow set of real-world applications,
-including speech recognition and computer vision.
-Moreover, many of these applications
-required so much domain knowledge
-that they were often regarded as entirely separate areas 
-for which machine learning was one small component.
-At that time, neural networks---the 
-predecessors of the deep learning methods
-that we focus on in this book---were 
-generally regarded as outmoded.
+Hace tan solo unos pocos años, no había legions de científicos de deep learning
+desarrollando productos y servicios en las grandes compañías y startups.
+Cuando se entró en este campó, el machine learning no protagonizó los titulares
+de los periódicos.
+Nuestros padres no tenían ni idea de que era el machine learning,
+y mucho menos, de porqué podríamos preferirlo a una carrera de medicina o abogacía.
+El machine learning fué una disciplina académica de cielos despejados,
+cuya signficancia en la industria estaba limitada a un estrecho conjunto de aplicaciones
+del mundo real, incluyendo el reconocimiento de voz y la visión por ordenador.
+es más, muchas de estas aplicaciones requerían tanto conocimiento de su propio dominio que fueron a menudo
+consideradas como áreas enteras separadas para las cuales el machine learning era un pequeño componente.
+En aquel tiempo, la redes neuronales---los predecesores de los métodos de deep learning sobre los que nos
+enfocamos en este libro---fueron consideramos generalmente anticuados.
 
+En los pasados cinco años, el deep learning ha tomado el mundo por sorpresa,
+llevando un rápido progreso en diversos campos como la visión por ordenador, procesameinto
+del lenguaje natural, aprendizaje por refuerzo, y la informática biomédica.
+Es más, el éxito del deep learning sobre muchas tareas de interés práctico
+ha incluso catalizado desarrollos teóricos en machine learning y estadística.
+Con estos avances, podemos ahora construir coches que se conducen ellos mismos con más autonomía que nunca 
+(y menos autonomía que algunas compañías podrían tener de lo que tú piensas),
+sistema de respuesta inteligentes que automáticamente redactan la mayoría de los mensajes comunes,
+ayudando a la gente a escarvar en los grandes buzones de correos,
+y los agentes de software que dominann el mundo de los mejores humanos en juegos de mesa como el Go, 
+una hazaña que alguna vez se pensó que estaría a décadas de producirse.
+Ya, estas herramientas ejercen cada vez más impacto en la industria y la sociedad,
+cambiando la forma en la que se hacen las películas, como se diagnostican enfermedades, y poniendo un
+papel cada vez importantes a ciencias básicas---desde la astrofísica a la biología.
 
-In just the past five years, deep learning has taken the world by surprise,
-driving rapid progress in such diverse fields 
-as computer vision, natural language processing, 
-automatic speech recognition, reinforcement learning, 
-and biomedical informatics.
 Moreover, the success of deep learning
 on so many tasks of practical interest
 has even catalyzed developments 
@@ -43,12 +47,12 @@ and playing a growing role in basic sciences---from astrophysics to biology.
 
 
 
-## About This Book
+## Acerca de este Libro
 
-This book represents our attempt to make deep learning approachable,
-teaching you the *concepts*, the *context*, and the *code*.
+Este libro representa nuestro intento para hacer el deep learning accesible, enseñandote los 
+*conceptos*, el *contexto* y el *código*.
 
-### One Medium Combining Code, Math, and HTML
+### Un Medio Combinando Código, Matemáticas y HTML
 
 For any computing technology to reach its full impact,
 it must be well-understood, well-documented, and supported by
